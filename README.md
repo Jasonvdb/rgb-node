@@ -12,8 +12,10 @@ wallet app.
 To compile the node, please install [cargo](https://doc.rust-lang.org/cargo/) and [rustup](https://rustup.rs/), then run the following commands:
 
     sudo apt update
-    sudo apt install -y build-essential pkg-config libzmq3-dev libssl1.0-dev libpq-dev
+    sudo apt install -y build-essential pkg-config libzmq3-dev libssl-dev libpq-dev cmake
     rustup default nightly
+    git clone https://github.com/LNP-BP/rgb-node.git
+    cd rgb-node
     cargo build --release
 
 Now, to run the node you can execute
